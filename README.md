@@ -28,4 +28,20 @@ docker-compose
 
 > docker-compose up
 > docker-compose up --build
+> docker-compose up -d
+> docker-compose down
+> docker-compose ps
+
+automitic restart crashed container
+
+restart Policies
+
++ "no"  Never attempt to restart this container if it stops or crashes no will be parsed as false without quote
++ always If this container stops "for any reason" always attempt to restart it
++ on-failure Only restart if the container stops with an error code
++ unless-stopped  Always restart unless we (the developers) forcebly stop it
+
+> docker-compose top
+
+
 
