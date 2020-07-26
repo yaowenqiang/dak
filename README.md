@@ -15,3 +15,13 @@ docker run = docker create + docker start
 > docker exec -it containerID redis-cli
 > docker exec -it containerID sh
 > docker run -it busybox sh
+
+
+Rebuild with Cache
+
+> docker build  -t yaowenqiang/redis:last .
+> docker commit -c "CMD ["redi-server"]"  containerID 
+
+
+
+
