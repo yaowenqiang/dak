@@ -44,4 +44,12 @@ restart Policies
 > docker-compose top
 
 
+> cnpm install -g create-react-app
+> create-react-app frontend
+> npm create-react-app frontend
+
+> docker build -f Dockerfile.dev .
+> rm -rf node_modules
+> docker run --rm  -it  -p 3000:3000 f25ebdaa9da2
+
 
